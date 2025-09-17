@@ -10,4 +10,11 @@ DESCRIPTION:
 - debug = true
 - dynamic routing
 - multiple @app.route('/')
-- ran in browser 
+- ran in browser
+  #DAY - 02 (16/9/2025)
+  - watched tutorial to make a to-do checklist form
+#DAY - 03 (17/9/2025)
+- clear definition of flask
+- intro about jinja, web server gateway interface
+- template engine
+- variables
