@@ -1,9 +1,9 @@
 from flask import Flask,render_template
 app1 = Flask(__name__)
+marks = [23,12,34,45,56,67,78,89,90]
 
 @app1.route("/")
 def home():
-    marks = [23,12,34,45,56,67,78,89,90]
     return render_template("home.html",List = marks)
 
 @app1.route("/about")
