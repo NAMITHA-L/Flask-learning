@@ -4,7 +4,12 @@
     </title>
 </head>
 <body>
-    <h1>Welcome Ms. {{user_name}}</h1>
+    {% if user_name == "Harshitha" %}
+    <h1 style ="color:rgb(84, 4, 4)">Welcome Ms. {{user_name}}</h1>
+    {% else%}
+    <h1 style ="color:rgb(5, 246, 214)">Welcome Ms. {{user_name}}</h1>
+    {% endif%}
+
     <ul>
         <li><a href = "/">Home</a></li>
         <li><a href = "/about">About</a></li>
