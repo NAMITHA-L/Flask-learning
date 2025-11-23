@@ -4,11 +4,15 @@
     </title>
 </head>
 <body>
-    {% if user_name == "Harshitha" %}
-    <h1 style ="color:rgb(84, 4, 4)">Welcome Ms. {{user_name}}</h1>
-    {% else%}
-    <h1 style ="color:rgb(5, 246, 214)">Welcome Ms. {{user_name}}</h1>
-    {% endif%}
+    <h1 style ="color:rgb(84, 4, 4)">Welcome Ms. NAMITHA </h1>
+    <ol>
+    {% for i in List %}
+   
+        <li>
+            {{i}}
+        </li>
+    {%endfor%}
+    </ol>
 
     <ul>
         <li><a href = "/">Home</a></li>
