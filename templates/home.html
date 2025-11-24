@@ -5,6 +5,8 @@
     <link type ="text/css" rel = "stylesheet" href="{{url_for('static',filename='css/example.css')}}">
 </head>
 <body>
+    {% block content %}
+
     <h1>Welcome Ms. NAMITHA </h1>
     <ol>
     {% for i in List %}
@@ -20,7 +22,11 @@
         <li><a href = "/about">About</a></li>
         <li><a href = "/profile">Profile</a></li>
     </ul>
-{% block content %}
+    <button onclick="check()">click</button>
+
 {% endblock %}
+<script type="text/javascript" src="{{url_for('static',filename='js/ex.js')}}">
+
+</script>
 </body>
 </html>
