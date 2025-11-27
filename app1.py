@@ -1,9 +1,14 @@
-from flask import Flask,render_template,url_for
+from flask import Flask,render_template,request
 app1 = Flask(__name__)
 
-@app1.route("/")
+@app1.route("/",methods = ['GET'])
 def home():
-    return render_template("home.html")
+     print(request.args)
+     my_name = request.args.get('name')
+     print(my_name )
+     my_age = request.args.get('age')
+     print(my_age )
+     return render_template("home.html")
 
 @app1.route("/about")
 def about():
@@ -12,6 +17,7 @@ def about():
 @app1.route("/profile")
 def profile():
     return render_template("profile.html")
+
 
 
 if __name__ == "__main__":
