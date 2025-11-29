@@ -1,5 +1,16 @@
 from flask import Flask,render_template,request
 app1 = Flask(__name__)
+import mysql.connector
+
+db = mysql.connector.connect(
+    host = "localhost",
+    username = "root",
+    password = "Namitha@1008",
+    database = "mydb"
+)
+cursor = db.cursor()
+
+
 
 @app1.route("/",methods = ['GET'])
 def home():
@@ -10,7 +21,11 @@ def home():
             email = request.args.get('email')
             pwd = request.args.get('pwd')
             print(name, email,pwd)
-            success = "success"
+            sql = "insert into users(name,email,pwd) values('{0}','{1}','{2}')".format(name,email,pwd)
+            cursor.execute(sql)
+            db.commit()
+            if cursor.rowcount >= 1:
+                            success = "success"
             return render_template("form.html", success=success )
         else:
             return render_template("form.html",success=success)
