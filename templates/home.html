@@ -4,9 +4,48 @@
     </title>
     <link type ="text/css" rel = "stylesheet" href="{{url_for('static',filename='css/bootstramp.css')}}">
 </head>
+<style>
+    .header{
+        background-color: aqua;
+        color: honeydew;
+        text-align:centre;
+    }
+    .menu{
+        background-color: rgb(234, 96, 158);
+    }
+</style>
 <body>
     
-<h1>welcome !</h1>
+<div class="container ">
+  <div class="row header"> <!--header-->
+    <div class="col-sm-4">
+      <h1>welcome !</h1>
+    </div>
+  </div>
+</div>
+<!--body-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 menu">
+        <ul class="list group">
+            <li class="list items"><a href="\">HOME</a></li>
+            <li class="list items"><a href="\?page=register">REGISTER</a></li>
+            <li class="list items"><a href="\?page=login">LOGIN</a></li>
+            <li class="list items"><a href="\?page=about">ABOUT</a></li>
+            <li class="list items"><a href="\?page=sports">SPORTS</a></li>
+        </ul>
+        <p>Loading...</p>
+        </div>
+    </div>
+</div>
+<!-- footer-->
+  <div class="container">
+  <div class="row header"> <!--header-->
+    <div class="col-sm-4">
+      <h1>THANK YOU!</h1>
+    </div>
+  </div>
+  </div>
     
 </body>
 </html>
