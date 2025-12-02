@@ -59,7 +59,12 @@ I also completed a YouTube learning series and earned a badge for finishing the 
 
 ## 🏅 Completion Badge
 I completed a full beginner-friendly Flask course on YouTube and earned a badge for finishing all modules.
-![flask-certi](https://github.com/user-attachments/assets/050748b9-118f-4c77-90c2-ada8cc632d74)
+
+<div align="center">
+  
+  <img src="https://github.com/user-attachments/assets/050748b9-118f-4c77-90c2-ada8cc632d74" alt="flask-certi" width="400px">
+  
+</div>
 
 
 ---
