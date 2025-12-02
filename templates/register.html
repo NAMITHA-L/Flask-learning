@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>REGISTERATION FORM</title>
   <link type ="text/css" rel = "stylesheet" href="{{url_for('static',filename='css/bootstramp.css')}}">
 
 </head>
 <body>
-    <p>
-        {% if success == "success" %}
-            {{"sucessfully registered"}}
-        {%else%}
-            
                 <div class="container">
-                <h2>REGISTER</h2>
+                <h3>REGISTER</h3>
                 <form action="/", methods = 'GET'>
                     <div class="form-group">
                     <label for="name">Name:</label>
@@ -28,14 +22,9 @@
                     <label for="pwd">Password:</label>
                     <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
                     </div>
-                    
-                    <input type="submit" class="btn btn-default" name = "reg" value = "Register">
+                    <button type = "submit" class="btn btn-primary ab-2" name="reg" value="Register">Submit</button>
                 </form>
                 </div>
-            
-    </p>
-    
-    {%endif%}
 
 </body>
 </html>

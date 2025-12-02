@@ -1,14 +1,40 @@
-<html>
-    <head>
-        <title>
-            this is profile page 
-            welcome namitha
-            if u want to go back ->
-        </title>
-    </head>
-    <body>
-        <h1> PROFILE </h1>
-         {% extends "home.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>PROFILE PAGE</h1>
+<a href="/">Home</a>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>PASSWORD</th>
+      </tr>
+    </thead>
+        <tbody>
+    {% for data in profile_data %}
 
-    </body>
+        <tr>
+            <td>{{data[0]}}</td>
+            <td>{{data[1]}}</td>
+            <td>{{data[2]}}</td>
+            <td>{{data[3]}}</td>
+        </tr>      
+    {%endfor%}
+
+        </tbody>
+  </table>
+</div>
+
+</body>
 </html>
+
